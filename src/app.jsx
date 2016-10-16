@@ -24,7 +24,7 @@ class MyEditor extends React.Component {
   render() {
     const {editorState} = this.state;
     return <div>
-    <h1>Draft.js Test!!!</h1>
+    <h1>Draft.js Test</h1>
     <div class="rows">
       <button onMouseDown={(e) => {
         this.onChange(

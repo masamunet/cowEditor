@@ -1,5 +1,5 @@
 {
-  "name": "cowEdit",
+  "name": "cowEditor",
   "version": "0.0.1",
   "description": "アウトラインエディタと統合された縦書きMarkdownエディタ",
   "main": "index.js",
