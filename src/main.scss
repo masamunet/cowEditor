@@ -1,0 +1,57 @@
+#cowEditer{
+  width: 95%;
+  height: 95%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family: "HiraMinProN-W3", "@ＭＳ 明朝", serif, sans-serif;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -epub-writing-mode: vertical-rl;
+  line-height: 1.75em;
+  text-align: justify;
+  // margin:0;
+  padding:0;
+  margin: auto;
+  font-size:1em;
+}
+body.vertical {
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -epub-writing-mode: vertical-rl;
+}
+body.horizontal{
+  writing-mode:horizontal-tb;
+  -epub-writing-mode:horizontal-tb;
+  -webkit-writing-mode:horizontal-tb;
+}
+/*
+縦中横
+縦書きに混じる!?や平成25年、ABCなどの半角英数字や記号などを正立
+*/
+.tcy {
+    font-size:0.9em;
+    letter-spacing:-0.1ex;
+    text-combine: horizontal;
+    -webkit-text-combine: horizontal;
+    -epub-text-combine: horizontal;
+}
+/*
+傍点
+*/
+span.sesami {
+  text-emphasis-style : sesame;
+  text-emphasis-color : #000;
+  -epub-text-emphasis-style : sesame;
+  -epub-text-emphasis-color : #000;
+  -webkit-text-emphasis-style : sesame;
+  -webkit-text-emphasis-color : #000;
+}
+/*
+かぎかっこ開始行で字下げを行わない場合
+*/
+p.escape{
+  text-indent:0;
+}

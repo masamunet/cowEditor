@@ -23,42 +23,14 @@ class MyEditor extends React.Component {
   }
   render() {
     const {editorState} = this.state;
-    return <div>
-    <h1>Draft.js Test</h1>
-    <div class="rows">
-      <button onMouseDown={(e) => {
-        this.onChange(
-          RichUtils.toggleInlineStyle(this.state.editorState, 'BOLD')
-        )
-        e.preventDefault()
-      }}>Bold</button>
-      <button onMouseDown={(e) => {
-        this.onChange(
-          RichUtils.toggleInlineStyle(this.state.editorState, 'ITALIC')
-        )
-        e.preventDefault()
-      }}>Italic</button>
-      <button onMouseDown={(e) => {
-        this.onChange(
-          RichUtils.toggleBlockType(this.state.editorState, 'header-two')
-        )
-        e.preventDefault()
-      }}>H2</button>
-      <button onMouseDown={(e) => {
-        this.onChange(
-          RichUtils.toggleBlockType(this.state.editorState, 'unordered-list-item')
-        )
-        e.preventDefault()
-      }}>List</button>
-    </div>
-    <div id='cowEditer'>
+    return　<div id='cowEditer'>
     <Editor
       editorState={editorState}
       onChange={this.onChange}
       handleKeyCommand={this.handleKeyCommand.bind(this)}
       ref="editor"
       />
-    </div></div>;
+    </div>;
   }
 }
 
