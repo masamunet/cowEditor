@@ -4,7 +4,9 @@
   "description": "アウトラインエディタと統合された縦書きMarkdownエディタ",
   "main": "index.js",
   "scripts": {
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "start": "gulp develop",
+    "build": "gulp build"
   },
   "author": "Masamune Utsunomiya",
   "license": "ISC",
@@ -13,13 +15,17 @@
     "babel-preset-react": "^6.16.0",
     "babelify": "^7.3.0",
     "browserfy": "^1.0.0",
+    "del": "^2.2.2",
     "draft-js": "^0.9.1",
     "draftjs-md-converter": "0.0.14",
     "gulp": "^3.9.1",
+    "gulp-pug": "^3.1.0",
+    "gulp-sass": "^2.3.2",
     "gulp-util": "^3.0.7",
     "gulp-webserver": "^0.9.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "run-sequence": "^1.2.2",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
   }
