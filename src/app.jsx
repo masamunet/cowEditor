@@ -11,7 +11,10 @@ class MyEditor extends React.Component {
     this.focus = () => this.refs.editor.focus();
   }
   componentDidMount(){
-    this.refs.editor.focus();
+    this.focus();
+    window.onfocus = ()=>{
+      this.focus();
+    };
   }
   handleKeyCommand(command) {
     const newState = RichUtils.handleKeyCommand(this.state.editorState, command)
